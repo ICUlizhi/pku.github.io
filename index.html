@@ -10,7 +10,12 @@
 <body>
 </body>
 <script type="text/javascript">
-  // 将这个地址修改成您需要的博客地址
-  window.location.href = "https://www.pku.edu.cn/";
+  //window.location.href = "https://www.pku.edu.cn/";
+  var random = Math.floor(Math.random() * 2);
+  if (random === 0) {
+    window.location.href = "https://www.pku.edu.cn/";
+  } else {
+    window.location.href = "https://eecs.pku.edu.cn/";
+  }
 </script>
 </html>
