@@ -10,18 +10,13 @@
 <body>
 </body>
 <script type="text/javascript">
-  // 获取当前时间
-  var currentTime = new Date();
-  var minutes = currentTime.getMinutes();
-
-  // 检查分钟是否为奇数
-  if (minutes % 2 === 1) {
-    // 跳转到第一个网址
+var currentTime = new Date();
+var seconds = currentTime.getSeconds();
+if (seconds % 2 === 1) {
     window.location.href = "https://www.pku.edu.cn/";
-  } else {
-    // 跳转到第二个网址
+} else {
     window.location.href = "https://eecs.pku.edu.cn/";
-  }
+}
 </script>
 </html>
 
