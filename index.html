@@ -8,16 +8,23 @@
   </style>
 </head>
 <body>
-</body>
-<script type="text/javascript">
-var currentTime = new Date();
-var seconds = currentTime.getSeconds();
-if (seconds % 2 === 1) {
-    window.location.href = "https://www.pku.edu.cn/";
-} else {
-    window.location.href = "https://eecs.pku.edu.cn/";
-}
+<script>
+  (function () {
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) && window.location.hostname === "ymzx.qq.com") {
+      window.location.href = "https://ymzx.qq.com/m/web202312m/index.html" + window.location.search;
+    }
+  })();
+
+  var currentTime = new Date();
+  var seconds = currentTime.getSeconds();
+  if (seconds % 2 === 1) {
+      window.location.href = "https://www.pku.edu.cn/";
+  } else {
+      window.location.href = "https://eecs.pku.edu.cn/";
+  }
 </script>
+</body>
 </html>
+
 
 
